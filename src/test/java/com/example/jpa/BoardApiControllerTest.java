@@ -26,9 +26,9 @@ public class BoardApiControllerTest {
   @Test
   public void selectTest() {
 
-    Board findBoard = boardRepository.findOneById(1L);
+    Board findBoard = boardRepository.findById("ef7783b7-a9b6-4089-8120-aadda97fb7bb");
 
-    String url = "http://localhost:" + port + "/api/board/1";
+    String url = "http://localhost:" + port + "/api/board/ef7783b7-a9b6-4089-8120-aadda97fb7bb";
 
     // given
 
